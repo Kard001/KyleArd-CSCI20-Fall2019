@@ -18,15 +18,18 @@ class Coinstar
 
        moneyString = Console.ReadLine();
        money = double.Parse(moneyString);
-
+       //Qd = money/25
+       //Q = money%25
        Qd = money/.25;
        int Q = (int)Qd;
        moneysort = money-(Q*.25);
-
+       //Dd = moneysort/10
+       //D = moneysort%10
        Dd = moneysort/.10;
        int D = (int)Dd;
        moneysort = moneysort-(D*.10);
-       
+       //Nd = moneysort/5
+       //N = moneysort%5
        Nd = moneysort/.05;
        int N = (int)Nd;
        moneysort = moneysort-(N*.05);
